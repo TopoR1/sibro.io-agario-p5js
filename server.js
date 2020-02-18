@@ -9,7 +9,7 @@ const app = express();
 const players = [];
 const foods = [];
 
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 const sockets = require('socket.io');
 
 const PORT = process.env.PORT || 5001;// The port
